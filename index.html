@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <header-bar></header-bar>
+    </header>
+    <main>
+      <article>
+        <rendi-photo
+          class="foto"
+          img="assets/img/Foto Rendi BG Merah.png"
+          imgAlt="Rendi Sutendi"
+          caption="Rendi Sutendi"
+        ></rendi-photo>
+      </article>
+      <article>
+        <div class="judulForm">My Notes</div>
+        <br />
+        <content-apps class="container" id="noteList"></content-apps>
+        <form id="noteForm">
+          <div class="judulForm">Tambah Notes</div>
+          <input
+            type="text"
+            id="noteTitle"
+            placeholder="Masukan Judul catatan"
+            required
+            maxlength="20"
+          />
+          <textarea
+            id="noteBody"
+            placeholder="Masukan Isi Catatn"
+            minlength="5"
+            required
+            rows="4"
+          ></textarea>
+          <input type="submit" value="Simpan" />
+        </form>
+      </article>
+    </main>
+    <footer>
+      <footer-elements></footer-elements>
+    </footer>
+    <script src="script/main.js" type="module"></script>
+  </body>
+</html>

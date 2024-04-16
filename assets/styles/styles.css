@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body {
+  background-color: #cbf1f5;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+  height: 100vh;
+}
+
+header {
+  background-color: #e3fdfd;
+  color: #71c9ce;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: #cbf1f5;
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 20px;
+  overflow-y: auto;
+}
+.foto {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.note {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #a6e3e9;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  background-color: #71c9ce;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+div.judulForm {
+  margin-top: 1rem;
+  background-color: #71c9ce;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
